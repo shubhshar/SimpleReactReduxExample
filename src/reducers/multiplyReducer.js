@@ -1,9 +1,11 @@
-const multiplyReducer = (initstate = 1, action) => {
+const multiplyReducer = (initstat = 1, action) => {
   switch (action.type) {
     case "MULTIPLY":
-      return initstate * 3;
+      return initstat * 3;
+    case "RESETM":
+      return (initstat = 1);
     default:
-      return initstate;
+      return initstat;
   }
 };
 export default multiplyReducer;

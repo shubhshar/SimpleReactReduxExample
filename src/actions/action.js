@@ -15,4 +15,16 @@ const multiply = () => {
     type: "MULTIPLY"
   };
 };
-export { increment, decrement, multiply };
+
+const resetC = () => {
+  return {
+    type: "RESETC"
+  };
+};
+
+const resetM = () => {
+  return {
+    type: "RESETM"
+  };
+};
+export { increment, decrement, multiply, resetC, resetM };
